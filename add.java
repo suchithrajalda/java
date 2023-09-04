@@ -11,7 +11,5 @@ class Add
 		a=a-b;
 		System.out.println(a+","+b);
 		
-		
 	}
-	
 }
