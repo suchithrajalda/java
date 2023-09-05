@@ -10,7 +10,7 @@ class Prime
 				count++;
 			}
 		}
-		if(count==0)
+		if(count==1)
 		{
 			System.out.println("prime");
 		}
