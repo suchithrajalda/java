@@ -1,0 +1,235 @@
+class Palindrome//question 7
+{
+	public static void main(String args[])
+	{
+		int n=121,rem,temp=0,p=n;
+		for(;n!=0;n/=10)
+		{
+			rem=n%10;
+			temp=temp*10+rem;
+		}
+		System.out.println(temp);
+		if(p==temp)
+		{
+			System.out.println("palindrome");
+		}
+		else
+		{
+			System.out.println("not palindrome");
+		}
+
+		
+	}
+
+}
+//output:
+121
+palindrome
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+class Primen//question 8
+{
+	public static void main(String args[])
+	{
+		int n=7, i=1,count=0;
+		for(;i<=n;i++)
+		{
+			if(n%i==0)
+			{
+			 	count++;
+			}
+		}
+		if(count==2)
+		{
+			System.out.println("prime");
+		}
+		else
+		{
+			System.out.println("not prime");
+		}
+		
+	}
+}
+//output
+prime
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+class primnumber//question 9
+{
+	public static void main(String args[])
+	{
+		int n=10,i;
+		for(i=1;i<=10;i++)
+		{
+			if(n%i==0)
+			{
+				System.out.println(i);
+			}
+		}
+	}
+}
+//output
+1
+2
+5
+10
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+class Armstrong//question 6
+{
+	public static void main(String args[])
+	{
+		int n=153,rem,p=n,sum=0;
+		for(;n!=0;n=n/10)
+		{
+			rem=n%10;
+			sum=sum+(rem*3);
+		}
+		System.out.println(sum);
+		if(p==sum)
+		{
+			System.out.println("Armstrong");
+		}
+		else
+		{
+			System.out.println("not Armstrong");
+		}
+
+	}
+}
+//output
+153
+Armstrong
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+class Evilnumber//question 1
+{
+	public static void main(String args[])
+	{
+		int n=9,rem=0,sum=0;
+		int p=n*n;
+		for(;p!=0;p/=10)
+		{
+			rem=p%10;
+			sum=sum+rem;
+		}
+		System.out.println(sum);
+		if(sum==n)
+		{
+			System.out.println("Evil number");
+		}
+		else
+		{
+			System.out.println("not Evil number");
+		}
+
+	}
+}
+//output
+Evil number
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+class powernum//question 2
+{
+	public static void main(String args[])
+	{
+		int n=132,sum=0,prod=1,rem=0;
+		for(;n!=0;n/=10)
+		{
+			rem=n%10;
+			sum=sum+rem;
+			prod=prod*rem;
+		}
+		System.out.println(sum);
+		System.out.println(prod);
+		if(sum==prod)
+		{
+			System.out.println("power number");
+		}
+		else
+		{
+			System.out.println("not power number");
+		}
+	}
+}
+//output
+6
+6
+power number
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+class automaticnum//question 3
+{
+	public static void main(String args[])
+	{
+		int n=76,rem=0,temp=0,b=n,div=0,mod=0;
+		int p=n*n;
+		rem=p%10;
+		int s=p/10;
+		temp=s%10;
+		div=b%10;
+		mod=b/10;
+		if(mod== temp && div==rem)
+		{
+			System.out.println("automatic");
+		}
+		else
+		{
+			System.out.println("not");
+		}
+		
+		
+		
+		
+	}
+}
+//output
+automatic
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+class Aliennum
+{
+	public static void main(String args[])
+	{
+		int n=12,rem=0,p,temp=0,count=0,rev=0;
+		p=n*n;
+		System.out.println(p);
+		for(n=12;n!=0;n/=10)
+		{
+			rem=n%10;
+			temp=temp*10+rem;
+		}
+		int s=temp*temp;
+		for(;s!=0;s/=10)
+		{
+			count=s%10;
+			rev=rev*10+count;
+		}
+		System.out.println(rev);
+		if(rev==p)
+		{
+			System.out.println("alien num");
+		}
+		else
+		{
+			System.out.println("not alien num");
+		}	
+	}
+}
+//output
+144
+144
+alien num
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+class technum
+{
+	public static void main(String args[])
+	{
+		int n=2025,count=0,rem=0,num=0,p=n;
+		for(;n!=0;n/=10)
+		{
+			count++;
+			rem=n%10;
+		}
+		System.out.println(count);
+		num=p/100;
+		System.out.println(num);
+		
+	}
+}
+
+
+
